@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 import './Recommend.scss';
-import { ReactComponent as ArrowsLeft } from '../../images/svg/arrows-left.svg';
+import { ReactComponent as  ArrowsLeft } from '../../images/svg/arrows-left.svg';
 
 export class Recommend extends Component {
   static propTypes = {
@@ -20,7 +20,7 @@ export class Recommend extends Component {
             <div className="goback">
               <div className="m-icon-left">
                 {/*<img src="../../images/svg/arrows-left.svg" alt=""/>*/}
-                <ArrowsLeft />
+                <ArrowsLeft className="svg-icon" />
 
               </div>
             </div>
