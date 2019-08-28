@@ -1,0 +1,118 @@
+@import "./blue";
+
+.login-container
+    width 600px
+    height 560px
+    background $menu-bg-color //$register-bg
+    margin 0px auto
+    .logo-img
+        display: flex
+        svg 
+            width: 1.02rem
+            height 0.3rem
+            margin auto
+    ul 
+        box-sizing border-box
+        height 100%
+        padding-top 30px
+        li
+            display flex
+            width 360px
+            margin 0 auto
+            background $register-li-bg
+            margin-bottom 14px
+            border-radius 18px
+            padding 7px 0
+            box-sizing border-box
+            span 
+                height 22px
+                display flex
+                svg 
+                    font-size 18px
+                    margin auto
+                    color #32374a
+                &:nth-child(1)
+                    border-right 1px solid $order-tit-cut-off
+                    padding 0 13px 0 15px
+                    margin-right 16px
+                &:nth-child(2)
+                    color $register-star-color
+                    line-height 26px
+                    margin-right 5px
+            &:nth-last-of-type(1)
+                padding 0 0
+                background none
+                margin-top 30px
+                button 
+                    height 44px
+                    line-height 44px
+                    border-radius 22px
+                    width 100%
+                    text-align center
+                    font-size: 16px;
+                    background $register-button-bg
+                    border none
+                    color $register-button-color
+            input 
+                width 270px !important
+                border none
+
+
+@media screen and (max-width: 760px)
+    .login-container
+        width 100%
+        height 100vh
+        .logo-img
+            svg 
+                margin-top 0.8rem
+        ul
+            height 3.8rem
+            padding-top 0.3rem
+            li
+                padding 0.03rem 0
+                width: 70%
+                border-radius 0.14rem
+                margin-bottom 0.1rem
+                background #ffffff
+                span 
+                    &:nth-child(3)
+                        width: 65% !important
+                        input 
+                            width 100%
+                &:nth-child(4),&:nth-child(5)
+                    span 
+                        &:nth-child(2)
+                            width: 60%
+                            input 
+                                width 100%
+
+                &:nth-child(7),&:nth-child(8),&:nth-child(6)
+                    span 
+                        &:nth-child(2)
+                            width: 67%
+                            select 
+                                width 100%
+                                outline:none
+                                border none
+                                background: none
+                                option
+                                    outline:none
+                                    border none
+                            .svg-icon
+                                margin-bottom 0.02rem
+                &:nth-last-of-type(1)
+                    button
+                        height 0.36rem
+                        line-height 0.36rem
+                        border-radius 0.18rem
+                        margin-top -0.1rem
+                        outline none
+                input 
+                    width 200px !important
+                    border none
+
+
+
+ 
+     
+ 

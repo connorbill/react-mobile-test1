@@ -1,0 +1,228 @@
+{
+  "token": "token01",
+  "msg": "SUCCESS",
+  "resCode": 1,
+  "name": "test",
+  "avatar": "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif",
+  "introduction": "test",
+  "roles": [
+    {
+      "component": "layout/Layout",
+      "name": "系统管理",
+      "id": "systeManage",
+      "children": [
+        {
+          "path": "/login",
+          "name": "HelloWorld",
+          "component": "HelloWorld"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "admin管理",
+          "id": "sm_admin"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "平台用户管理",
+          "id": "sm_user",
+          "children": [
+            {
+              "component": "systemManage/sm_admin",
+              "name": "角色管理",
+              "id": "sm_role"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "权限管理",
+              "id": "sm_right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "layout/Layout",
+      "name": "彩票核心",
+      "id": "lotteryCore",
+      "children": [
+        {
+          "component": "systemManage/sm_admin",
+          "name": "彩种信息",
+          "id": "lc_info"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "详细配置",
+          "id": "lc_config",
+          "children":[
+            {
+              "component": "systemManage/sm_admin",
+              "name": "香港彩系列",
+              "id": "lc_c_hk"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "快3系列",
+              "id": "lc_c_k3"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "PK10系列",
+              "id": "lc_c_pk10"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "11选5系列",
+              "id": "lc_c_x5"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "时时彩系列",
+              "id": "lc_c_ssc"
+            },
+            {
+              "component": "systemManage/sm_admin",
+              "name": "快乐十分系列",
+              "id": "lc_c_k10"
+            }
+          ]
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "开盘管理",
+          "id": "lc_open"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "开奖结果",
+          "id": "lc_result"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "注单结算",
+          "id": "lc_bill"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "测试验证",
+          "id": "lc_test"
+        }
+      ]
+    },
+    {
+      "component": "layout/Layout",
+      "name": "代理商管理",
+      "id": "agentManage",
+      "children": [
+        {
+          "component": "systemManage/sm_admin",
+          "name": "信息管理",
+          "id": "ag_info"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "审核管理",
+          "id": "ag_check"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "配置管理",
+          "id": "ag_config"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "自定义赔率",
+          "id": "ag_odds"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "客户管理",
+          "id": "ag_customer"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "盈亏管理",
+          "id": "ag_profit"
+        }
+      ]
+    },
+    {
+      "component": "layout/Layout",
+      "name": "API管理",
+      "id": "apiManage",
+      "children": [
+        {
+          "component": "systemManage/sm_admin",
+          "name": "API管理",
+          "id": "am_manage"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "调用明细",
+          "id": "am_detailed"
+        }
+      ]
+    },
+    {
+      "component": "layout/Layout",
+      "name": "风控管理",
+      "id": "riskManage",
+      "children": [
+        {
+          "component": "systemManage/sm_admin",
+          "name": "风控指标",
+          "id": "rm_index"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "风控预警",
+          "id": "rm_warning"
+        }
+      ]
+    },
+    {
+      "component": "layout/Layout",
+      "name": "BI报表",
+      "id": "biReport",
+      "children": [
+        {
+          "component": "systemManage/sm_admin",
+          "name": "报表1",
+          "id": "br_01"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "报表2",
+          "id": "br_02"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "报表3",
+          "id": "br_03"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "报表4",
+          "id": "br_04"
+        }
+      ]
+    },
+    {
+      "component": "layout/Layout",
+      "name": "消息中心",
+      "id": "messageCenter",
+      "children": [
+        {
+          "component": "systemManage/sm_admin",
+          "name": "类型管理",
+          "id": "mc_type"
+        },
+        {
+          "component": "systemManage/sm_admin",
+          "name": "消息发送",
+          "id": "mc_send"
+        }
+      ]
+    }
+  ]
+}
