@@ -5,6 +5,8 @@ import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 import './Recommend.scss';
 import { ReactComponent as  ArrowsLeft } from '../../images/svg/arrows-left.svg';
+import { ReactComponent as  Logo } from '../../images/svg/logo1.svg';
+
 
 export class Recommend extends Component {
   static propTypes = {
@@ -24,6 +26,11 @@ export class Recommend extends Component {
 
               </div>
             </div>
+            <div className="goHome">
+              <div className="company-name">
+                <Logo className="logo-icon" />
+              </div>
+            </div>
             <ul className="quick-menu">
               <li>推荐</li>
               <li>分类</li>
@@ -31,7 +38,55 @@ export class Recommend extends Component {
               <li>我的</li>
             </ul>
           </div>
+          <img src={require("../../images/home/headerBG.png")}  alt="" className="header-bg"/>
         </header>
+        <ul className="hot-games">
+          <li>
+            <div className="flag">广东</div>
+            <div className="lottery-ball"></div>
+            <div className="hot-text"></div>
+            <div>
+              11:12:12:13
+            </div>
+            <div className="online">在线100人</div>
+          </li>
+          <li>
+            <div className="flag">广东</div>
+            <div className="lottery-ball"></div>
+            <div className="hot-text"></div>
+            <div>
+              11:12:12:13
+            </div>
+            <div className="online">在线100人</div>
+          </li>
+          <li>
+            <div className="flag">广东</div>
+            <div className="lottery-ball"></div>
+            <div className="hot-text"></div>
+            <div>
+              11:12:12:13
+            </div>
+            <div className="online">在线100人</div>
+          </li>
+          <li>
+            <div className="flag">广东</div>
+            <div className="lottery-ball"></div>
+            <div className="hot-text"></div>
+            <div>
+              11:12:12:13
+            </div>
+            <div className="online">在线100人</div>
+          </li>
+          <li>
+            <div className="flag">广东</div>
+            <div className="lottery-ball"></div>
+            <div className="hot-text"></div>
+            <div>
+              11:12:12:13
+            </div>
+            <div className="online">在线100人</div>
+          </li>
+        </ul>
       </div>
     );
   }

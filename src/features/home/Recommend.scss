@@ -1,23 +1,23 @@
+.home-recommend-page{
+  padding-top: 40px;
+}
+
 .goback .m-icon-left {
   font-size: 20px;
   width: 30px;
   //color: $menu-font-color;
   text-align: right;
   height: 44px;
-}
-.goback .m-icon-left svg {
-  position: relative;
-  top: -2px;
-  left: 1px;
-}
-.goback .m-icon-left img {
-  position: relative;
-  top: -2px;
-  left: 1px;
-  //color: red;
+
+  .svg-icon{
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .header {
+  top: 0;
   z-index: 99;
   position: fixed;
   width: 100%;
@@ -37,24 +37,95 @@
     height: 44px;
     line-height: 44px;
     //background-color: $menu-bg-color;
+    background-color: #00b8ff;
+
   }
   .quick-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    width: 221px;
+    //width: 221px;
+    flex: 1;
     li {
       font-size: 17px;
       //color: $menu-font-color;
+      color: #fff;
       cursor: pointer;
       height: 50px;
+      flex: 1;
     }
   }
-  img {
+  .header-bg {
     position: relative;
     z-index: -1;
     height: 40px;
     width: 100%;
   }
+}
+
+
+.company-name {
+  width: 120px;
+  height: 44px;
+}
+.logo-icon {
+  width: 86px;
+  height: 44px;
+}
+
+
+.hot-games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: center;
+  //width: 350px;
+  margin: 38px auto 0;
+}
+.hot-games li {
+  cursor: pointer;
+  width: 110px;
+  height: 155px;
+  margin-right: 10px;
+  margin-top: 12px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  background-color: pink;
+}
+//.hot-games li p {
+//  height: 0.15rem;
+//  line-height: 0.15rem;
+//}
+.hot-games li:nth-child(3n +0) {
+  margin-right: 0;
+}
+.hot-games li .flag {
+  width: 30px;
+  height: 18px;
+  line-height: 18px;
+  position: absolute;
+  border-radius: 0 3px 0 5px;
+  right: 0;
+  top: 0;
+  //background: $menu-flag;
+  //color: $menu-font-color;
+}
+.hot-games li .online {
+  //color: $menu-font-color-alpha;
+}
+
+.lottery-ball {
+  height: 90px !important;
+}
+.hot-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+.mt7 {
+  margin-top: 115px;
 }
