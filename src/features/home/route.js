@@ -1,6 +1,12 @@
-import { WelcomePage } from './';
+// import { WelcomePage } from './';
+import loadable from 'react-loadable';
+import ReactLoadableLoading from '../common/ReactLoadableLoading.js';
 
+let Recommend = loadable({
+  loader: () => import('./Recommend.js'),
+  loading: ReactLoadableLoading
+});
 export default {
   path: '',
-  childRoutes: [{ path: 'welcome-page', component: WelcomePage, isIndex: true }],
+  childRoutes: [{ path: 'recommend', component: Recommend, isIndex: true }],
 };
