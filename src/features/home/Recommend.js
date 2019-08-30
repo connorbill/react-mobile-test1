@@ -42,49 +42,13 @@ export class Recommend extends Component {
         </header>
         <ul className="hot-games">
           <li>
-            <div className="flag">广东</div>
-            <div className="lottery-ball"></div>
-            <div className="hot-text"></div>
-            <div>
+            <p className="flag">广东</p>
+            <p className="lottery-ball"></p>
+            <p className="hot-text"></p>
+            <p>
               11:12:12:13
-            </div>
-            <div className="online">在线100人</div>
-          </li>
-          <li>
-            <div className="flag">广东</div>
-            <div className="lottery-ball"></div>
-            <div className="hot-text"></div>
-            <div>
-              11:12:12:13
-            </div>
-            <div className="online">在线100人</div>
-          </li>
-          <li>
-            <div className="flag">广东</div>
-            <div className="lottery-ball"></div>
-            <div className="hot-text"></div>
-            <div>
-              11:12:12:13
-            </div>
-            <div className="online">在线100人</div>
-          </li>
-          <li>
-            <div className="flag">广东</div>
-            <div className="lottery-ball"></div>
-            <div className="hot-text"></div>
-            <div>
-              11:12:12:13
-            </div>
-            <div className="online">在线100人</div>
-          </li>
-          <li>
-            <div className="flag">广东</div>
-            <div className="lottery-ball"></div>
-            <div className="hot-text"></div>
-            <div>
-              11:12:12:13
-            </div>
-            <div className="online">在线100人</div>
+            </p>
+            <p className="online">在线100人</p>
           </li>
         </ul>
       </div>

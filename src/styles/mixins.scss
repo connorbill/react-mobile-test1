@@ -1,0 +1,145 @@
+// tips颜色
+$tips-bg-color: #73e0c3;
+$tips-text-color: #fefefe;
+$tips-success-color: #086f00;
+$tips-warning-color: #e88300;
+$tips-error-color: #bd0303;
+$suAactive-tips-bg-color:#37419A;
+$nosuAactive-tips-bg-color : #EEEEEE;
+
+
+// 颜色集合
+$white: #ffffff; // 白色背景色和字体色
+$blue: #00c9b2; // 蓝色字体背景边框色
+$red: #f44b60; // 红色字体背景色
+$grey1: #32374a; // 灰色1
+$grey2: #2a2e3e; // 灰色2
+$grey3: #5b6488; // 灰色3
+$grey4: #4f546a; // 灰色4
+$grey5: #363b51; // 灰色5
+$grey6: #545a72; // 灰色6
+$grey7: #42475d; // 灰色7
+$grey8: #494f65; // 灰色8
+$grey9: #545a73; // 灰色9
+$grey1-0: #8b90a3; // 灰色10
+$grey1-1: #232633; // 灰色11
+$grey1-2: #202330; // 灰色12
+$grey1-3: #2a2f3e; // 灰色13
+
+// 头部菜单
+$menu-bg-color: #00b8ff; // 菜单背景颜色
+$menu-flag: #15cc51;
+$menu-font-color-active: #3a3f9a; // 父级菜单选中 饱和度降低10%
+$menu-font-color: $menu-bg-color;   // 字体颜色
+$menu-font-color-alpha: rgba(255,255,255,0.5);   // 透明字体色
+$menu-font-color-par: $menu-font-color;// 父级菜单颜色
+$menu-stair-color: darken($menu-font-color, 30%); // 一级玩法字体淡灰色字
+
+// 倒计时
+$count-down-bg-color: #13b7f6;// 倒计时背景
+$count-balance-color: #20ace1;// 倒计余额时背景
+$count-bg: $menu-bg-color;// 赔率背景
+// $odds-line: darken($menu-bg-color + 100%, 6%)// 线条色
+$odds-line: #eaeaea;// 线条色
+// $odds-show: darken($menu-bg-color + 100%, 20%)// 阴影色
+$odds-show: #f0f0f0;// 阴影色
+$count-font: darken($menu-font-color, 60%); // 字体色
+$count-active: $count-down-bg-color; // 选中下注
+$count-disable-bg: darken($menu-font-color, 5%); // 不可选背景
+$count-disable-font: darken($menu-font-color, 60%); // 不可选字体
+$odds-disable-show: darken($menu-bg-color, 2%);// 不可选阴影色
+$odds-disable-line: darken($menu-bg-color, 8%);// 不可选线条色
+
+// 下注输入
+$bet-tot-bg: lighten($menu-bg-color, 95%); // 下注标题背景
+$bet-tot-bg1: lighten($menu-bg-color, 90%); // 下注背景深
+$bet-tot-bg2: lighten($menu-bg-color, 30%); // 描边
+$bet-font: desaturate(lighten($menu-bg-color, 50%), 80% ) ;// 下注标题字体
+$bet-font-d: desaturate(lighten($menu-bg-color, 40%), 100% ); // 下注标题字体深色
+$bet-font-a: $count-down-bg-color;// 下注标题字体选中
+$bet-but-font: $menu-bg-color; // 下注按扭字体
+$bet-but-line: desaturate(darken($bet-tot-bg1, 1%), 95% ); // 下注线条色
+$bet-bg: $menu-bg-color; // 投注列表背景色
+$keyboard-bg:  darken($menu-bg-color, 5%); //  键盘背景色
+$keyboard-line: darken($menu-bg-color, 15%); //  键盘线条色
+
+
+// 个人中心
+$parmenu-bg: lighten($menu-bg-color, 90%); // 彩种选择父级彩种背景色
+$menu-font: darken($menu-font-color, 60%); // 深灰色字体
+$font-active: $menu-bg-color; // 选中字体色
+$allmenu-bg: $menu-bg-color;  // 白色背景
+$date-activebg: lighten($menu-bg-color, 95%); // 选中时间背景颜色
+$date-active-font: $menu-bg-color; // 选中时间文字颜色
+$rem-font: darken($menu-font-color, 30%); // 备注淡灰色字
+$font-amount: #ffe652; // 选中字体色
+
+// 投注记录
+$order-tit-bg: lighten($menu-bg-color, 90%); // 投注详情背景色
+$order-tit-cut-off: darken($menu-font-color, 10%); // 分割线
+$order-tit-bg-details: lighten($menu-bg-color, 97%); // 投注详情内容背景色
+$order-tit-font: darken($menu-font-color, 63%); // 投注详情字体色
+$order-title-font: darken($menu-font-color, 65%); // 投注详情标题字体色
+$order-details-font: darken($menu-font-color, 40%); // 投注详情内容字体色
+$order-font: darken($menu-font-color, 50%); // 投注详情内容列表字体色
+
+// 玩法说明弹窗
+$game-explain-color: $grey1-0; // 游戏说明字体颜色
+$game-explain-box-border: $grey1-1; // 游戏说明盒子边框色
+$game-explain-scrollbar-bg: $grey1; // 投注详情滚动条背景色
+
+// 悬浮快捷
+$quickView-bg: $menu-bg-color; // 悬浮小球
+$quickView-font: $menu-bg-color; // 悬浮小球
+$quick-wrap-bg: $menu-bg-color;   // 悬浮弹出背景
+$quick-tit-bg: $menu-bg-color;   // 悬浮弹出标题背景
+$quick-font-cur: $font-active;   // 悬浮弹出标选中标题文字
+$quick-font: darken($menu-font-color, 50%);    // 悬浮弹出标标题文字
+
+// 路子
+$trent-title-bg: darken($menu-font-color, 4%); // 路子标题背景色
+$trent-title-font: darken($menu-font-color, 55%); // 路子标题背景色
+
+// 提示弹窗
+$hint-title-bg: lighten($menu-bg-color, 40%);
+$hint-title-color: lighten($menu-bg-color, 100%);
+
+
+
+
+
+
+// 玩法界面确认投注弹窗
+$notarize-wager-bg: #42475d;// 背景颜色
+$notarize-wager-font-color: #c3c9d4; // 字体色
+$notarize-wager-title-bg: #2a2f3e; // 头部标题背景色
+$notarize-wager-box-border: #535b73; // 内容盒子边框色
+$notarize-wager-sum-font-color: #f44b60; // 总金额与总注数字体色
+$notarize-wager-odds-font-color: #f44b60; // 单注赔率字体色
+$notarize-wager-notarize-btn-bg: #f44b60; // 确定按钮背景色
+$notarize-wager-cancel-btn-bg: #2a2f3e; // 取消按钮背景色
+$notarize-wager-cancel-btn-color: #858cad; // 取消按钮背景色
+$notarize-wager-scrollbar-bg: #32374a; // 滚动条背景色
+$notarize-wager-li-hover-bg: #5b6488; // li悬停背景色
+
+// 弹出框样式
+$alert-shadow: #161616; // 弹出框阴影
+$alert-font: #666769; // 字体颜色
+$alert-but-font: $menu-bg-color; // 按扭字体颜色
+
+// 无数据时的图标色
+$menu-nolist-color: #e1ecf0;
+// 历史开奖
+
+$history-color: $menu-bg-color; // 字体色
+// $history-nolist-svg-color: darken($menu-font-color, 10%) // 无数据时的图标色
+$history-nolist-svg-color: $menu-nolist-color; // 无数据时的图标色
+$history-nolist-color: darken($menu-font-color, 40%); // 无数据时的字体色
+$history-nolist-buttom-color: lighten($menu-bg-color, 100%); // 无数据时按钮的字体色
+$slinkfields-tit-font: #b8b8b8;  // 小字的字体色
+
+
+// 盘口信息
+$handicap-titlebox-bg: $menu-bg-color;// 标题容器背景色
+$handicap-tit-border: darken($menu-font-color, 10%); // 盘口信息标题边框色
+$handicap-tit-bg: lighten($menu-bg-color, 90%); // 盘口信息标题背景色

@@ -1,3 +1,4 @@
+@import "../../styles/mixins";
 .home-recommend-page{
   padding-top: 40px;
 }
@@ -5,7 +6,7 @@
 .goback .m-icon-left {
   font-size: 20px;
   width: 30px;
-  //color: $menu-font-color;
+  color: $menu-font-color;
   text-align: right;
   height: 44px;
 
@@ -36,7 +37,7 @@
     flex-wrap: wrap;
     height: 44px;
     line-height: 44px;
-    //background-color: $menu-bg-color;
+    background-color: $menu-bg-color;
     background-color: #00b8ff;
 
   }
@@ -52,7 +53,7 @@
       //color: $menu-font-color;
       color: #fff;
       cursor: pointer;
-      height: 50px;
+      height: 44px;
       flex: 1;
     }
   }
@@ -61,6 +62,7 @@
     z-index: -1;
     height: 40px;
     width: 100%;
+    vertical-align: top;
   }
 }
 
@@ -68,6 +70,9 @@
 .company-name {
   width: 120px;
   height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo-icon {
   width: 86px;
@@ -81,7 +86,7 @@
   justify-content: flex-start;
   flex-direction: row;
   text-align: center;
-  //width: 350px;
+  width: 350px;
   margin: 38px auto 0;
 }
 .hot-games li {
@@ -97,10 +102,10 @@
   color: #fff;
   background-color: pink;
 }
-//.hot-games li p {
-//  height: 0.15rem;
-//  line-height: 0.15rem;
-//}
+.hot-games li p {
+  height: 15px;
+  line-height: 15px;
+}
 .hot-games li:nth-child(3n +0) {
   margin-right: 0;
 }
