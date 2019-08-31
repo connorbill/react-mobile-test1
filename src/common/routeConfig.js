@@ -5,6 +5,7 @@ import commonRoute from '../features/common/route';
 import examplesRoute from '../features/examples/route';
 import shopRoute from '../features/shop/route';
 import lotteryRoute from '../features/lottery/route';
+import loginRoute from '../features/my/route';
 import _ from 'lodash';
 
 // NOTE: DO NOT CHANGE the 'childRoutes' name and the declaration pattern.
@@ -15,6 +16,7 @@ const childRoutes = [
   examplesRoute,
   shopRoute,
   lotteryRoute,
+  loginRoute,
 ];
 
 const routes = [{

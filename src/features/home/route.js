@@ -6,7 +6,14 @@ let Recommend = loadable({
   loader: () => import('./Recommend.js'),
   loading: ReactLoadableLoading
 });
+let Layout = loadable({
+  loader: () => import('./Layout.js'),
+  loading: ReactLoadableLoading
+});
+
+
 export default {
-  path: '',
+  path: 'home',
+  component: Layout,
   childRoutes: [{ path: 'recommend', component: Recommend, isIndex: true }],
 };
