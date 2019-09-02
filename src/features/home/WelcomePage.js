@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route, Redirect } from 'react-router-dom';
 import * as actions from './redux/actions';
 import './WelcomePage.scss';
 
@@ -15,6 +15,7 @@ export class WelcomePage extends Component {
   render() {
     return (
       <div className="home-welcome-page">
+        <Redirect to="/home" />
         <header className="app-header">
           <img src={require('../../images/rekit-react.png')} className="rekit-logo" alt="logo" />
           <h1 className="app-title">Welcome to Rekit React</h1>

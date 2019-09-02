@@ -10,10 +10,25 @@ let Layout = loadable({
   loader: () => import('./Layout.js'),
   loading: ReactLoadableLoading
 });
+let WelcomePage = loadable({
+  loader: () => import('./WelcomePage.js'),
+  loading: ReactLoadableLoading
+});
+let GameClass = loadable({
+  loader: () => import('./GameClass.js'),
+  loading: ReactLoadableLoading
+});
 
 
 export default {
-  path: 'home',
-  component: Layout,
-  childRoutes: [{ path: 'recommend', component: Recommend, isIndex: true }],
+  path: '',
+  childRoutes: [
+    { component: WelcomePage, isIndex: true },
+    { path: 'home', component: Layout,
+      childRoutes: [
+        { path: 'recommend',component: Recommend, isIndex: true },
+        { path: 'class',component: GameClass },
+      ],
+    }
+  ],
 };
